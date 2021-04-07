@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import GithubContext from '../../context/github/githubContext';
 import AlertContext from '../../context/alert/alertContext';
+// import '../../App.css';
 
 const Search = () => {
     const githubContext = useContext(GithubContext);
@@ -22,11 +23,11 @@ const Search = () => {
 
         return (
             <div>
-                <form className="form" onSubmit={onSubmit}>
+                <form className="form form-container" onSubmit={onSubmit}>
                     <input type="text" name="text" placeholder="Search User..." value={text} onChange={onChange} />
-                    <input type="submit" value="Search" className="btn btn-dark btn-block" />
+                    <input type="submit" value="Search" className="search-btn btn-dark btn-block" />
+                {githubContext.users.length > 0 && ( <button className="btn btn-danger btn-block" onClick={githubContext.clearUsers}>Clear</button> )}
                 </form>
-                {githubContext.users.length > 0 && ( <button className="btn btn-light btn-block" onClick={githubContext.clearUsers}>Clear</button> )}
             </div>
         )
 }

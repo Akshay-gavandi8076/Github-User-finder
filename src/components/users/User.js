@@ -37,7 +37,7 @@ const  User = ({ match }) => {
             // <div>{name}</div>
             <Fragment>
                 <Link to="/" className='btn btn-light'>
-                    Back to Search
+                <i class="far fa-hand-point-left">  Back to Search</i>
                 </Link>
                 Hireable: {''}
                 {hireable ? (
@@ -86,7 +86,7 @@ const  User = ({ match }) => {
                         </ul>
                     </div>
                 </div>
-                <div className='card text-center'>
+                <div className='card-1 text-center'>
                     <div className='badge badge-primary'>Followers: {followers} </div>
                     <div className='badge badge-success'>Following: {following} </div>
                     <div className='badge badge-light'>Public Repos: {public_repos} </div>

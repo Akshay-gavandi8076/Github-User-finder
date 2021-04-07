@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+// import Search from '../users/Search';
 
 const Navbar = ({ icon, title}) => {
     return (
@@ -8,6 +9,7 @@ const Navbar = ({ icon, title}) => {
       <h1>
       <i className={icon}/> {title}
       </h1>
+      {/* <Search/> */}
       <ul>
         <li>
           <Link to="/">Home</Link>
