@@ -239,6 +239,11 @@ img {
   color: #fff;
 }
 
+.btn-success:hover {
+  opacity: 0.6;
+  color: #fff;
+}
+
 .search-btn:hover {
   opacity: 0.8;
 }
